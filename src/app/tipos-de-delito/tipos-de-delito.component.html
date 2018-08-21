@@ -1,0 +1,17 @@
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let item of tiposdedelitos">
+        <td>{{item.id}}</td>
+        <td>{{item.tipo_de_delito}}</td>
+        <td>{{item.descripcion}}</td>
+      </tr>
+  </tbody>
+
+</table>

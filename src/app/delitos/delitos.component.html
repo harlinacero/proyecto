@@ -1,0 +1,31 @@
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>id</th>
+      <th>tiposdedelito_id</th>
+      <th>fecha_delito</th>
+      <th>hora_delito</th>
+      <th>edad</th>
+      <th>sexo</th>
+      <th>identificacion</th>
+      <th>nombre_completo</th>
+      <th>detalle</th>
+      <th>direccion</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let item of delitos">
+        <td>{{item.id}}</td>
+        <td>{{item.tiposdedelito_id}}</td>
+        <td>{{item.fecha_delito}}</td>
+        <td>{{item.hora_delito}}</td>
+        <td>{{item.edad}}</td>
+        <td>{{item.sexo}}</td>
+        <td>{{item.identificacion}}</td>
+        <td>{{item.nombre_completo}}</td>
+        <td>{{item.detalle}}</td>
+        <td>{{item.direccion}}</td>
+      </tr>
+  </tbody>
+
+</table>
