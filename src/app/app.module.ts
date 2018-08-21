@@ -13,6 +13,7 @@ import { UniversidadComponent } from './universidad/universidad.component';
 import { MapsComponent } from './maps/maps.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { DelitosComponent } from './delitos/delitos.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HeaderComponent } from './header/header.component';
     HomeComponent,
     MapsComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    DelitosComponent
   ],
   imports: [
     BrowserModule,

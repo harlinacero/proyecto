@@ -8,7 +8,6 @@ import { TiposDeDelitosService } from '../tipos-de-delitos.service';
 })
 export class UniversidadComponent implements OnInit {
   delitos: any;
-  tiposDelitos: any[];
 
   constructor(private _service: TiposDeDelitosService) { }
 
