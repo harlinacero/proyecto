@@ -11,13 +11,15 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { AgmCoreModule } from '@agm/core';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UniversidadComponent,
     HomeComponent,
-    MapsComponent
+    MapsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
