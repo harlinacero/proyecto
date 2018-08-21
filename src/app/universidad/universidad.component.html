@@ -1,16 +1,21 @@
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-  <tr *ngFor="let item of delitos">
-    <td>{{item.tipo_de_delito}}</td>
-    <td>{{item.tipo_de_delito}}</td>
-    <td>{{item.tipo_de_delito}}</td>
-    <td>{{item.tipo_de_delito}}</td>
-    <td>{{item.tipo_de_delito}}</td>
-  </tr>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let item of delitos">
+          <td>{{item.id}}</td>
+          <td>{{item.tipo_de_delito}}</td>
+          <td>{{item.descripcion}}</td>
+          <td>{{item.created_at}}</td>
+          <td>{{item.url}}</td>
+        </tr>
+  </tbody>
+
 </table>

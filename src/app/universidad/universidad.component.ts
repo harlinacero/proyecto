@@ -7,17 +7,15 @@ import { TiposDeDelitosService } from '../tipos-de-delitos.service';
   styleUrls: ['./universidad.component.css']
 })
 export class UniversidadComponent implements OnInit {
-  delitos:any;
-  tiposDelitos:any[];
+  delitos: any;
+  tiposDelitos: any[];
 
   constructor(private _service: TiposDeDelitosService) { }
 
   ngOnInit() {
     this._service.getAllDelitos().subscribe(data => {
       this.delitos = data;
-      //console.log(this.delitos[0]);
     });
-    
   }
 
 }
